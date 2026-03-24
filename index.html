@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kata Naszádi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      background: #faf9f7;
+      color: #2c2c2c;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+      line-height: 1.75;
+    }
+
+    header {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    header img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      flex-shrink: 0;
+    }
+
+    header > div {
+      padding-top: 0.2rem;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #4a7c74;
+      line-height: 1.1;
+      margin-bottom: 0.3rem;
+    }
+
+    .subtitle {
+      font-size: 0.85rem;
+      color: #999;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .links {
+      margin-top: 0.7rem;
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: #4a7c74;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 400;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .links a:hover {
+      border-bottom-color: #4a7c74;
+    }
+
+    .bio {
+      font-size: 1rem;
+      color: #3a3a3a;
+      margin-bottom: 3.5rem;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #4a7c74;
+      letter-spacing: 0.01em;
+      margin-bottom: 1.6rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #dde8e6;
+    }
+
+    .item {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #f0eeeb;
+    }
+
+    .item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .item-date {
+      font-size: 0.75rem;
+      color: #bbb;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      padding-top: 0.15rem;
+      min-width: 58px;
+    }
+
+    .item-body {
+      font-size: 0.92rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #fff;
+      background: #4a7c74;
+      padding: 0.15em 0.55em 0.1em;
+      border-radius: 2px;
+      margin-bottom: 0.35rem;
+    }
+
+    .tag.talk      { background: #b07d59; }
+    .tag.news      { background: #7d74a0; }
+    .tag.preprint  { background: #a0896b; }
+
+    .item-title {
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .item-title a {
+      color: #2c2c2c;
+      text-decoration: none;
+      border-bottom: 1px solid #d0cdc9;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .item-title a:hover {
+      color: #4a7c74;
+      border-bottom-color: #4a7c74;
+    }
+
+    .item-venue {
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .links { justify-content: center; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/kataprofile.jpeg" alt="Kata Naszádi">
+    <div>
+      <h1>Kata Naszádi</h1>
+      <p class="subtitle">PhD Candidate · University of Amsterdam</p>
+      <nav class="links">
+        <a href="https://scholar.google.com/citations?user=9VPXRE8AAAAJ&hl=en">Google Scholar</a>
+        <a href="mailto:k.naszadi@uva.nl">k.naszadi@uva.nl</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bio">
+    <p>I am interested in natural language as a tool of communication. My research focuses on human-AI teams that use natural language in order to coordinate their actions and understand each other better. I am part of the <strong>Language Technology Lab</strong> at the University of Amsterdam.</p>
+  </section>
+
+  <section>
+    <h2>News &amp; Publications</h2>
+
+    <div class="item">
+      <span class="item-date">Mar 2026</span>
+      <div class="item-body">
+        <span class="tag news">news</span>
+        <span class="item-title">
+          <a href="https://github.com/ltl-uva/build_what_i_mean">Build What I Mean</a> — winning benchmark at the AgentX–AgentBeats agentic benchmark competition
+        </span>
+        <span class="item-venue">A benchmark about partner adaptation and efficient communication under underspecification.</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <span class="item-date">Sep 2025</span>
+      <div class="item-body">
+        <span class="tag preprint">preprint</span>
+        <span class="item-title">
+          <a href="https://osf.io/preprints/psyarxiv/jce38_v1">Listeners Adapt Dynamically to Speakers' Pragmatic Competence</a>
+        </span>
+        <span class="item-venue">PsyArXiv · Naszadi, Mayn, Duff, Monz &amp; Demberg</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <span class="item-date">Feb 2025</span>
+      <div class="item-body">
+        <span class="tag talk">talk</span>
+        <span class="item-title">
+          <a href="https://nds.uni-saarland.de/rails2025/submission_81.pdf">Listeners adapt to speakers' pragmatic competence</a>
+        </span>
+        <span class="item-venue">RAILS 2025 · Saarbrücken, Germany</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <span class="item-date">Nov 2024</span>
+      <div class="item-body">
+        <span class="tag">paper</span>
+        <span class="item-title">
+          <a href="https://doi.org/10.18653/v1/2024.emnlp-main.1213">Communicating with Speakers and Listeners of Different Pragmatic Levels</a>
+        </span>
+        <span class="item-venue">EMNLP 2024 · Naszádi, Oliehoek &amp; Monz</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <span class="item-date">Dec 2023</span>
+      <div class="item-body">
+        <span class="tag">paper</span>
+        <span class="item-title">
+          <a href="https://aclanthology.org/2023.findings-emnlp.999/">Aligning Predictive Uncertainty with Clarification Questions in Grounded Dialog</a>
+        </span>
+        <span class="item-venue">Findings of EMNLP 2023 · Naszadi, Manggala &amp; Monz</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <span class="item-date">Jun 2022</span>
+      <div class="item-body">
+        <span class="tag">paper</span>
+        <span class="item-title">
+          <a href="https://proceedings.mlr.press/v176/kiseleva22a/kiseleva22a.pdf">Interactive Grounded Language Understanding in a Collaborative Environment: IGLU 2021</a>
+        </span>
+        <span class="item-venue">NeurIPS 2021 Competitions Track · PMLR 176</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <span class="item-date">Sep 2018</span>
+      <div class="item-body">
+        <span class="tag">paper</span>
+        <span class="item-title">Image-sensitive Language Modeling for Automatic Speech Recognition</span>
+        <span class="item-venue">ECCV Workshops 2018 · Naszadi, Oualil &amp; Klakow</span>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

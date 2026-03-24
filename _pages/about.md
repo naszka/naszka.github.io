@@ -1,11 +1,8 @@
 ---
-permalink: /
+permalink: /old-about/
 title: "About me"
 excerpt: "About me"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 I am interested in natural language as a tool of communication. My research focuses on human-AI teams that 
